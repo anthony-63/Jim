@@ -4,4 +4,8 @@
 import class
 
 when isMainModule:
-  echo("Hello, World!")
+    var reader = jim_class_reader_init("Test.class")
+    var java_class = reader.parse_class_file()
+
+    echo java_class
+
